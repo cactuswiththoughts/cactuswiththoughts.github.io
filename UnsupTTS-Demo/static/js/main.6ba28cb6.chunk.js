@@ -175,7 +175,7 @@
             className: "main-inner"
         }, n.a.createElement("h1", {
             className: "main-title"
-        }, "Unsupervised Text-to-Speech Synthesis by Unsupervised Automatic Speech Recognition:", n.a.createElement("font", {
+        }, "(Update Soon) Unsupervised Text-to-Speech Synthesis by Unsupervised Automatic Speech Recognition:", n.a.createElement("font", {
             className: "blue"
         }, " Audio Demo")), n.a.createElement("div", {
             className: "introduction"
