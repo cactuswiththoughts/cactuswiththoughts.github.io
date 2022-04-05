@@ -258,7 +258,7 @@
             className: "main-inner"
         }, n.a.createElement("h1", {
             className: "main-title"
-        }, "(Update Soon) Unsupervised Text-to-Speech Synthesis by Unsupervised Automatic Speech Recognition:", n.a.createElement("font", {
+        }, "Unsupervised Text-to-Speech Synthesis by Unsupervised Automatic Speech Recognition:", n.a.createElement("font", {
             className: "blue"
         }, " Audio Demo")), n.a.createElement("div", {
             className: "introduction"
@@ -366,12 +366,12 @@
             u14: "./demo_results_de/unsup/utt0000000070_gen.wav",
             u15: "./demo_results_de/sup/utt0000000070_gen.wav",
         }), n.a.createElement(s, {
-            title: "Spanish",
+            title: "(Update soon) Spanish",
             u1: "./ground_truth/p245/p245_001.wav",
             u2: "./ground_truth/p239_007.wav",
             u3: "./autovc/700000_1.0/p245_p239_001.wav",
         }), n.a.createElement(s, {
-            title: "Finnish",
+            title: "(Update soon) Finnish",
             u1: "./ground_truth/p270/p270_024002.wav",
             u2: "./ground_truth/p239_007.wav",
             u3: "./autovc/700000_1.0/p270_p239_024002.wav",
