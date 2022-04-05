@@ -13,9 +13,7 @@
         var t = e.title,
             a = e.u1,
             r = e.u2,
-            o = e.u3,
-            l = e.u4,
-            s = e.u5;
+            o = e.u3;
         return n.a.createElement("div", {
             className: "wrapper"
         }, n.a.createElement("p", {
@@ -36,28 +34,113 @@
         }, n.a.createElement("source", {
             src: r,
             type: "audio/wav"
-        }), "Your browser does not support the audio element."))), n.a.createElement("div", {
-            className: "rowv"
-        }, n.a.createElement("div", {
+        }), "Your browser does not support the audio element.")),
+        n.a.createElement("div", {
             className: "element"
         }, n.a.createElement("p", null, "Supervised Tacotron 2:"), n.a.createElement("audio", {
             controls: !0
         }, n.a.createElement("source", {
             src: o,
             type: "audio/wav"
-        }), "Your browser does not support the audio element.")), n.a.createElement("div", {
+        }), "Your browser does not support the audio element."))),
+        n.a.createElement("div", {
+            className: "rowv"
+        }, n.a.createElement("div", {
             className: "element"
-        }, n.a.createElement("p", null, "RR"), n.a.createElement("audio", {
+        }, n.a.createElement("audio", {
             controls: !0
         }, n.a.createElement("source", {
-            src: l,
+            src: e.u4,
             type: "audio/wav"
         }), "Your browser does not support the audio element.")), n.a.createElement("div", {
             className: "element"
-        }, n.a.createElement("p", null, "AutoPST(Proposed)"), n.a.createElement("audio", {
+        }, n.a.createElement("audio", {
             controls: !0
         }, n.a.createElement("source", {
-            src: s,
+            src: e.u5,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element.")),
+        n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u6,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element."))),
+        n.a.createElement("div", {
+            className: "rowv"
+        }, n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u7,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element.")), n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u8,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element.")),
+        n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u9,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element."))),
+        n.a.createElement("div", {
+            className: "rowv"
+        }, n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u10,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element.")), n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u11,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element.")),
+        n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u12,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element."))),
+        n.a.createElement("div", {
+            className: "rowv"
+        }, n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u13,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element.")), n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u14,
+            type: "audio/wav"
+        }), "Your browser does not support the audio element.")),
+        n.a.createElement("div", {
+            className: "element"
+        }, n.a.createElement("audio", {
+            controls: !0
+        }, n.a.createElement("source", {
+            src: e.u15,
             type: "audio/wav"
         }), "Your browser does not support the audio element."))))
     };
@@ -199,46 +282,99 @@
             className: "blue"
         }, "Ground truth"), " \u2013 Ground truth speech utterance"))), n.a.createElement(s, {
             title: "English",
-            u1: "./ground_truth/p245/p245_003001.wav",
-            u2: "./ground_truth/p231_007.wav",
-            u3: "./autovc/700000_1.0/p245_p231_003001.wav",
-            u4: "./naive_rr/500000_1.0/p245_p231_003001.wav",
-            u5: "./31_01/580000_1.0/p245_p231_003001.wav"
+            u1: "./demo_results_eng/gt/LJ001-0001.wav",
+            u2: "./demo_results_eng/unsup/LJ001-0001.wav_gen.wav",
+            u3: "./demo_results_eng/sup/LJ001-0001.wav_gen.wav",
+            u4: "./demo_results_eng/gt/LJ001-0002.wav",
+            u5: "./demo_results_eng/unsup/LJ001-0002.wav_gen.wav",
+            u6: "./demo_results_eng/sup/LJ001-0002.wav_gen.wav",
+            u7: "./demo_results_eng/gt/LJ001-0004.wav",
+            u8: "./demo_results_eng/unsup/LJ001-0004.wav_gen.wav",
+            u9: "./demo_results_eng/sup/LJ001-0004.wav_gen.wav",
+            u10: "./demo_results_eng/gt/LJ001-0005.wav",
+            u11: "./demo_results_eng/unsup/LJ001-0005.wav_gen.wav",
+            u12: "./demo_results_eng/sup/LJ001-0005.wav_gen.wav",
+            u13: "./demo_results_eng/gt/LJ001-0008.wav",
+            u14: "./demo_results_eng/unsup/LJ001-0008.wav_gen.wav",
+            u15: "./demo_results_eng/sup/LJ001-0008.wav_gen.wav",
         }), n.a.createElement(s, {
             title: "Hungarian",
-            u1: "./speech_examples/hu/gt/egri_csillagok_1906.wav",
+            u1: "./speech_examples/hu/gt/utt0000000003.wav",
             u2: "./speech_examples/hu/hifigan/utt0000000003_gen.wav",
             u3: "./speech_examples/hu/supervised/utt0000000003_gen.wav",
-            u4: "./naive_rr/500000_1.0/p270_p231_003002.wav",
-            u5: "./31_01/580000_1.0/p270_p231_003002.wav"
+            u4: "./speech_examples/hu/gt/utt0000000042.wav",
+            u5: "./speech_examples/hu/hifigan/utt0000000042_gen.wav",
+            u6: "./speech_examples/hu/supervised/utt0000000042_gen.wav",
+            u7: "./speech_examples/hu/gt/utt0000000040.wav",
+            u8: "./speech_examples/hu/hifigan/utt0000000040_gen.wav",
+            u9: "./speech_examples/hu/supervised/utt0000000040_gen.wav",
+            u10: "./speech_examples/hu/gt/utt0000000020.wav",
+            u11: "./speech_examples/hu/hifigan/utt0000000020_gen.wav",
+            u12: "./speech_examples/hu/supervised/utt0000000020_gen.wav",
+            u13: "./speech_examples/hu/gt/utt0000000009.wav",
+            u14: "./speech_examples/hu/hifigan/utt0000000009_gen.wav",
+            u15: "./speech_examples/hu/supervised/utt0000000009_gen.wav",
         }), n.a.createElement(s, {
             title: "Japanese",
-            u1: "./ground_truth/p270/p270_024001.wav",
-            u2: "./ground_truth/p239_007.wav",
-            u3: "./autovc/700000_1.0/p270_p239_024001.wav",
-            u4: "./naive_rr/500000_1.0/p270_p239_024001.wav ",
-            u5: "./31_01/580000_1.0/p270_p239_024001.wav"
+            u1: "./speech_examples/ja/gt/utt0000000002.wav",
+            u2: "./speech_examples/ja/hifigan/utt0000000002_gen.wav",
+            u3: "./speech_examples/ja/supervised/utt0000000002_gen.wav",
+            u4: "./speech_examples/ja/gt/utt0000000008.wav",
+            u5: "./speech_examples/ja/hifigan/utt0000000008_gen.wav",
+            u6: "./speech_examples/ja/supervised/utt0000000008_gen.wav",
+            u7: "./speech_examples/ja/gt/utt0000000047.wav",
+            u8: "./speech_examples/ja/hifigan/utt0000000047_gen.wav",
+            u9: "./speech_examples/ja/supervised/utt0000000047_gen.wav",
+            u10: "./speech_examples/ja/gt/utt0000000024.wav",
+            u11: "./speech_examples/ja/hifigan/utt0000000024_gen.wav",
+            u12: "./speech_examples/ja/supervised/utt0000000024_gen.wav",
+            u13: "./speech_examples/ja/gt/utt0000000030.wav",
+            u14: "./speech_examples/ja/hifigan/utt0000000030_gen.wav",
+            u15: "./speech_examples/ja/supervised/utt0000000030_gen.wav",
+        }), n.a.createElement(s, {
+            title: "Dutch",
+            u1: "./speech_examples/nl/gt/utt0000000014.wav",
+            u2: "./speech_examples/nl/hifigan/utt0000000014_gen.wav",
+            u3: "./speech_examples/nl/supervised/utt0000000014_gen.wav",
+            u4: "./speech_examples/nl/gt/utt0000000016.wav",
+            u5: "./speech_examples/nl/hifigan/utt0000000016_gen.wav",
+            u6: "./speech_examples/nl/supervised/utt0000000016_gen.wav",
+            u7: "./speech_examples/nl/gt/utt0000000043.wav",
+            u8: "./speech_examples/nl/hifigan/utt0000000043_gen.wav",
+            u9: "./speech_examples/nl/supervised/utt0000000043_gen.wav",
+            u10: "./speech_examples/nl/gt/utt0000000059.wav",
+            u11: "./speech_examples/nl/hifigan/utt0000000059_gen.wav",
+            u12: "./speech_examples/nl/supervised/utt0000000059_gen.wav",
+            u13: "./speech_examples/nl/gt/utt0000000028.wav",
+            u14: "./speech_examples/nl/hifigan/utt0000000028_gen.wav",
+            u15: "./speech_examples/nl/supervised/utt0000000028_gen.wav",
+        }), n.a.createElement(s, {
+            title: "German",
+            u1: "./demo_results_de/gt/utt0000000020.wav",
+            u2: "./demo_results_de/unsup/utt0000000020_gen.wav",
+            u3: "./demo_results_de/sup/utt0000000020_gen.wav",
+            u4: "./demo_results_de/gt/utt0000000027.wav",
+            u5: "./demo_results_de/unsup/utt0000000027_gen.wav",
+            u6: "./demo_results_de/sup/utt0000000027_gen.wav",
+            u7: "./demo_results_de/gt/utt0000000033.wav",
+            u8: "./demo_results_de/unsup/utt0000000033_gen.wav",
+            u9: "./demo_results_de/sup/utt0000000033_gen.wav",
+            u10: "./demo_results_de/gt/utt0000000044.wav",
+            u11: "./demo_results_de/unsup/utt0000000044_gen.wav",
+            u12: "./demo_results_de/sup/utt0000000044_gen.wav",
+            u13: "./demo_results_de/gt/utt0000000070.wav",
+            u14: "./demo_results_de/unsup/utt0000000070_gen.wav",
+            u15: "./demo_results_de/sup/utt0000000070_gen.wav",
         }), n.a.createElement(s, {
             title: "Spanish",
             u1: "./ground_truth/p245/p245_001.wav",
             u2: "./ground_truth/p239_007.wav",
             u3: "./autovc/700000_1.0/p245_p239_001.wav",
-            u4: "./naive_rr/500000_1.0/p245_p239_001.wav",
-            u5: "./31_01/580000_1.0/p245_p239_001.wav"
         }), n.a.createElement(s, {
             title: "Finnish",
             u1: "./ground_truth/p270/p270_024002.wav",
             u2: "./ground_truth/p239_007.wav",
             u3: "./autovc/700000_1.0/p270_p239_024002.wav",
-            u4: "./naive_rr/500000_1.0/p270_p239_024002.wav",
-            u5: "./31_01/580000_1.0/p270_p239_024002.wav"
-        }), n.a.createElement(s, {
-            title: "German",
-            u1: "./ground_truth/p231/p231_003001.wav",
-            u2: "./ground_truth/p245_007.wav",
-            u3: "./autovc/700000_1.0/p231_p245_003001.wav",
-            u4: "./naive_rr/500000_1.0/p231_p245_003001.wav",
-            u5: "./31_01/580000_1.0/p231_p245_003001.wav"
         })))
     };
     Boolean("localhost" === window.location.hostname || "[::1]" === window.location.hostname || window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
