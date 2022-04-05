@@ -205,14 +205,14 @@
             u4: "./naive_rr/500000_1.0/p245_p231_003001.wav",
             u5: "./31_01/580000_1.0/p245_p231_003001.wav"
         }), n.a.createElement(s, {
-            title: "Japanese",
-            u1: "./ground_truth/p270/p270_003002.wav",
-            u2: "./ground_truth/p231_007.wav",
-            u3: "./autovc/700000_1.0/p270_p231_003002.wav",
+            title: "Hungarian",
+            u1: "./speech_examples/hu/gt/egri_csillagok_1906.wav",
+            u2: "./speech_examples/hu/hifigan/utt0000000003_gen.wav",
+            u3: "./speech_examples/hu/supervised/utt0000000003_gen.wav",
             u4: "./naive_rr/500000_1.0/p270_p231_003002.wav",
             u5: "./31_01/580000_1.0/p270_p231_003002.wav"
         }), n.a.createElement(s, {
-            title: "Hungarian",
+            title: "Japanese",
             u1: "./ground_truth/p270/p270_024001.wav",
             u2: "./ground_truth/p239_007.wav",
             u3: "./autovc/700000_1.0/p270_p239_024001.wav",
