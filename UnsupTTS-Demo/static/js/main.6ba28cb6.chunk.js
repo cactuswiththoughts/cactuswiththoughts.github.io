@@ -278,7 +278,7 @@
             className: "blue"
         }, "Unsupervised Tacotron 2"), " \u2013 The proposed unsupervised TTS algorithm trained without any paired speech and text data"), n.a.createElement("li", null, n.a.createElement("font", {
             className: "blue"
-        }, "Supervised Tacotron 2"), " \u2013 A state-of-the-art supervised TTS algorithm trained with paired speech and text data", n.a.createElement("sup", null, "[1]"), "."), n.a.createElement("li", null, n.a.createElement("font", {
+        }, "Supervised Tacotron 2"), " \u2013 A state-of-the-art supervised TTS algorithm trained with paired speech and text data."), n.a.createElement("li", null, n.a.createElement("font", {
             className: "blue"
         }, "Ground truth"), " \u2013 Ground truth speech utterance"))), n.a.createElement(s, {
             title: "English",
