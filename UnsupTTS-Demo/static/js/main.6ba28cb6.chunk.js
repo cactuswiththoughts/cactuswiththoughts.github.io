@@ -152,6 +152,12 @@
             o = e.u3,
             l = e.t1,
             s = e.t2;
+        var githublink = n.a.createElement("a");
+        var linktext = n.a.createTextNode("https://github.com/lwang114/UnsupTTS");
+        githublink.appendChild(linktext);
+        githublink.title = "https://github.com/lwang114/UnsupTTS";
+        githublink.href = "https://github.com/lwang114/UnsupTTS";
+
         return n.a.createElement("div", {
             className: "wrapper"
         }, n.a.createElement("p", {
@@ -280,7 +286,11 @@
             className: "blue"
         }, "Supervised Tacotron 2"), " \u2013 A state-of-the-art supervised TTS algorithm trained with paired speech and text data."), n.a.createElement("li", null, n.a.createElement("font", {
             className: "blue"
-        }, "Ground truth"), " \u2013 Ground truth speech utterance"))), n.a.createElement(s, {
+        }, "Ground truth"), " \u2013 Ground truth speech utterance")), n.a.createElement("p", {
+            style: {
+                marginTop: "1.5em"
+            }
+        }, "For more information, please check our code at https://github.com/lwang114/UnsupTTS.")), n.a.createElement(s, {
             title: "English",
             u1: "./demo_results_eng/gt/LJ001-0001.wav",
             u2: "./demo_results_eng/unsup/LJ001-0001.wav_gen.wav",
