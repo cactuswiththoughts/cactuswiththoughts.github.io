@@ -290,7 +290,7 @@
             style: {
                 marginTop: "1.5em"
             }
-        }, "For more information, please check our code at https://github.com/lwang114/UnsupTTS.")), n.a.createElement(s, {
+        }, "For more information, please check our code at "+"https://github.com/lwang114/UnsupTTS.".link("https://github.com/lwang114/UnsupTTS"))), n.a.createElement(s, {
             title: "English",
             u1: "./demo_results_eng/gt/LJ001-0001.wav",
             u2: "./demo_results_eng/unsup/LJ001-0001.wav_gen.wav",
