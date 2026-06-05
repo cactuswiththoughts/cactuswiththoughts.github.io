@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Speaker De-Identification on ADReSS</title>
+  <title>DDPO-VC: Dementia Speaker De-Identification via Diffusion Denoising Policy Optimization</title>
   <style>
     :root {
       color-scheme: light;
@@ -113,7 +113,7 @@
 <body>
   <main>
     <h1>Speaker De-Identification on ADReSS</h1>
-    <p class="subtitle">10 shared utterances with audible DDPO outputs (RMS at least -45.0 dBFS), peak-normalized to 0.95.</p>
+    <p class="subtitle">10 randomly selected shared utterances from ADReSS (RMS at least -45.0 dBFS), peak-normalized to 0.95.</p>
     
     <div class="table-wrap">
       <table>
@@ -123,10 +123,10 @@
             <th scope="col">Utterance</th>
             <th scope="col">Original</th>
             <th scope="col">LinearVC</th>
-            <th scope="col">vevo</th>
+            <th scope="col">VEVO</th>
             <th scope="col">VALL-E</th>
-            <th scope="col">DDPO-VC (base)</th>
-            <th scope="col">DDPO-VC (RL)</th>
+            <th scope="col">DDPO-VC (Ours, base)</th>
+            <th scope="col">DDPO-VC (Ours, RL)</th>
           </tr>
         </thead>
         <tbody>
