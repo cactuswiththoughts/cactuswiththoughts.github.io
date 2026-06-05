@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Speaker De-Identification on ADReSS</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --panel: #ffffff;
+      --text: #1c2430;
+      --muted: #647084;
+      --line: #d9dee7;
+      --accent: #0f766e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+    main {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 28px 18px 40px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+    .subtitle, .note {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .note {
+      color: #8a4b00;
+      background: #fff7e6;
+      border: 1px solid #f2d59b;
+      padding: 10px 12px;
+      border-radius: 6px;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+    table {
+      width: max-content;
+      min-width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: middle;
+      font-size: 13px;
+    }
+    th:last-child, td:last-child { border-right: 0; }
+    th {
+      position: sticky;
+      top: 0;
+      background: #eef2f7;
+      color: #253044;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    tr:last-child td { border-bottom: 0; }
+    tr:last-child th { border-bottom: 0; }
+    .row-number {
+      width: 44px;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .utterance {
+      position: static;
+      width: 180px;
+      min-width: 180px;
+      background: var(--panel);
+      color: var(--text);
+      font-weight: 500;
+    }
+    .audio-cell {
+      width: 224px;
+      min-width: 224px;
+    }
+    code {
+      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      color: #0b5f59;
+      white-space: nowrap;
+    }
+    audio {
+      width: 200px;
+      height: 40px;
+      display: block;
+    }
+    .missing {
+      color: var(--muted);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Speaker De-Identification on ADReSS</h1>
+    <p class="subtitle">10 shared utterances with audible DDPO outputs (RMS at least -45.0 dBFS), peak-normalized to 0.95.</p>
+    
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Utterance</th>
+            <th scope="col">Original</th>
+            <th scope="col">LinearVC</th>
+            <th scope="col">vevo</th>
+            <th scope="col">VALL-E</th>
+            <th scope="col">DDPO-VC (base)</th>
+            <th scope="col">DDPO-VC (RL)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td class="row-number">1</td>
+              <th class="utterance" scope="row"><code>S160_15114_20622</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S160_15114_20622.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S160_15114_20622.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S160_15114_20622.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S160_15114_20622.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S160_15114_20622.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S160_15114_20622.wav"></audio></td>
+            </tr>
+          <tr>
+              <td class="row-number">2</td>
+              <th class="utterance" scope="row"><code>S166_45222_46250</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S166_45222_46250.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S166_45222_46250.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S166_45222_46250.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S166_45222_46250.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S166_45222_46250.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S166_45222_46250.wav"></audio></td>
+            </tr>
+          <tr>
+              <td class="row-number">3</td>
+              <th class="utterance" scope="row"><code>S166_55455_62888</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S166_55455_62888.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S166_55455_62888.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S166_55455_62888.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S166_55455_62888.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S166_55455_62888.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S166_55455_62888.wav"></audio></td>
+            </tr>
+          <tr>
+              <td class="row-number">4</td>
+              <th class="utterance" scope="row"><code>S166_6693_9884</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S166_6693_9884.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S166_6693_9884.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S166_6693_9884.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S166_6693_9884.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S166_6693_9884.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S166_6693_9884.wav"></audio></td>
+            </tr>
+          <tr>
+              <td class="row-number">5</td>
+              <th class="utterance" scope="row"><code>S172_36133_38692</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S172_36133_38692.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S172_36133_38692.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S172_36133_38692.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S172_36133_38692.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S172_36133_38692.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S172_36133_38692.wav"></audio></td>
+            </tr>
+          <tr>
+              <td class="row-number">6</td>
+              <th class="utterance" scope="row"><code>S172_41600_46568</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S172_41600_46568.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S172_41600_46568.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S172_41600_46568.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S172_41600_46568.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S172_41600_46568.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S172_41600_46568.wav"></audio></td>
+            </tr>
+          <tr>
+              <td class="row-number">7</td>
+              <th class="utterance" scope="row"><code>S178_73423_74521</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S178_73423_74521.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S178_73423_74521.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S178_73423_74521.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S178_73423_74521.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S178_73423_74521.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S178_73423_74521.wav"></audio></td>
+            </tr>
+          <tr>
+              <td class="row-number">8</td>
+              <th class="utterance" scope="row"><code>S183_20600_23051</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S183_20600_23051.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S183_20600_23051.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S183_20600_23051.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S183_20600_23051.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S183_20600_23051.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S183_20600_23051.wav"></audio></td>
+            </tr>
+          <tr>
+              <td class="row-number">9</td>
+              <th class="utterance" scope="row"><code>S184_25883_33072</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S184_25883_33072.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S184_25883_33072.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S184_25883_33072.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S184_25883_33072.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S184_25883_33072.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S184_25883_33072.wav"></audio></td>
+            </tr>
+          <tr>
+              <td class="row-number">10</td>
+              <th class="utterance" scope="row"><code>S184_36442_39422</code></th>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/original__S184_36442_39422.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/linearvc__S184_36442_39422.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/vevo__S184_36442_39422.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/valle__S184_36442_39422.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_base__S184_36442_39422.wav"></audio></td>
+              <td class="audio-cell"><audio controls preload="metadata" src="wavs/ddpo_rl__S184_36442_39422.wav"></audio></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
